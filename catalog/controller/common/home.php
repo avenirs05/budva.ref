@@ -5,12 +5,16 @@ class ControllerCommonHome extends Controller {
 		$this->document->setDescription($this->config->get('config_meta_description'));
 		$this->document->setKeywords($this->config->get('config_meta_keyword'));
     
-    $this->document->addScript('bower/jquery/dist/jquery.js', 'footer');
-    $this->document->addScript('bower/popper.js/dist/umd/popper.js', 'footer');
-    $this->document->addScript('bower/bootstrap/dist/js/bootstrap.bundle.min.js', 'footer');
-    $this->document->addScript('bower/jquery.maskedinput/dist/jquery.maskedinput.js', 'footer');   
-   
-    $this->document->addStyle('bower/bootstrap/dist/css/bootstrap.min.css');
+    $this->document->addScript('library/jquery/dist/jquery.js', 'footer');
+    $this->document->addScript('library/popper.js/dist/umd/popper.js', 'footer');
+    $this->document->addScript('library/bootstrap/dist/js/bootstrap.bundle.min.js', 'footer');
+    $this->document->addScript('library/jquery.maskedinput/dist/jquery.maskedinput.js', 'footer');   
+    $this->document->addScript(DIR_THEME_BUDVA . 'dist/bundle.js', 'footer');
+    $this->document->addScript('library/jQuery-Simple-MobileMenu-master/dist/jquery-simple-mobilemenu.min.js', 'footer');
+
+    $this->document->addStyle('library/jQuery-Simple-MobileMenu-master/dist/styles/jquery-simple-mobilemenu.css');
+    $this->document->addStyle('library/bootstrap/dist/css/bootstrap.min.css');
+    $this->document->addStyle(DIR_THEME_BUDVA . 'dist/bundle.css');
 
     if (isset($this->request->get['route'])) {
 			$this->document->addLink($this->config->get('config_url'), 'canonical');

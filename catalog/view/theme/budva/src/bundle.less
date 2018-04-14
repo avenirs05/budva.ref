@@ -1,0 +1,130 @@
+@black: rgb(51, 51, 51);
+@blue: rgb(51, 122, 183);
+@yellow: yellow;
+@yellowLight: rgb(255, 255, 153);
+@orange: rgb(255, 193, 7);
+@fontLight: 'OpenSansCondensedLight', sans-serif;
+@marginIcon: 5px;
+@marginMenuItem: 20px;
+
+
+
+@font-face {
+    font-family: "OpenSansCondensedLight";
+    src: url("../fonts/OpenSans-CondLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;  
+}
+
+.container-fluid {
+		padding-left: 35px;
+		padding-right: 35px;
+}
+
+ul {
+		padding: 0;
+}
+
+@media screen and (max-device-width: 991px) {
+	.container-fluid {
+			padding-left: 15px;
+			padding-right: 15px;
+	}
+}
+
+@media screen and (min-device-width: 320px) {
+
+}
+
+@media screen and (min-device-width: 360px) {
+
+}
+
+@media screen and (min-device-width: 480px) {	
+
+}
+
+@media screen and (min-device-width: 576px) {	
+
+}
+
+@media screen and (min-device-width: 768px) {
+
+}
+
+@media screen and (min-device-width: 768px) 
+							and (max-device-width: 991px) and (orientation:landscape) {
+
+}
+
+@media screen and (min-device-width: 768px) 
+							and (max-device-width: 991px) and (orientation:portrait) {
+
+}
+
+@media screen and (min-device-width: 992px) {	
+
+}
+
+@media screen and (min-device-width: 1200px) {	
+
+}
+
+@media screen and (min-device-width: 1600px) {	
+
+}
+
+@media screen and (min-device-width: 1920px) {	
+
+}
+
+.connects__icon {
+		margin-right: @marginIcon;
+}
+.connects__phone-text {
+		font-size: 28px;
+		font-family: @fontLight;
+		color: @yellowLight;
+}
+.header {
+		background-color: @black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: white;
+}
+.header-mob {
+		height: 50px;
+		background-color: @black;
+}
+.menu {
+		list-style-type: none; 
+		margin-bottom: 0;		
+}
+.menu__item {
+		display: inline;
+		font-family: @fontLight;
+		font-size: 24px;
+		margin-right: @marginMenuItem;
+		text-decoration: none;
+}
+
+.menu__item:last-child {
+		margin-right: 0;
+}
+.menu__link {
+		color: @yellowLight;
+		text-decoration: none;
+}
+
+.menu__link:hover {
+		text-decoration: none;
+		color: @yellow;
+}
+
+.menu__link_pressed {
+		color: @orange;
+}
+
+.menu__link_normal {
+		color: @yellowLight;
+}

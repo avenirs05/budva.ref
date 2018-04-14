@@ -17,7 +17,9 @@ define('DIR_DOWNLOAD', 'C:/Users/Lenovo_note/Documents/OpenServer/domains/budva.
 define('DIR_LOGS', 'C:/Users/Lenovo_note/Documents/OpenServer/domains/budva.ref/system/storage/logs/');
 define('DIR_MODIFICATION', 'C:/Users/Lenovo_note/Documents/OpenServer/domains/budva.ref/system/storage/modification/');
 define('DIR_UPLOAD', 'C:/Users/Lenovo_note/Documents/OpenServer/domains/budva.ref/system/storage/upload/');
-define('DIR_BUDVA', 'C:/Users/Lenovo_note/Documents/OpenServer/domains/budva.ref/catalog/view/theme/budva');
+
+// My constants
+define('DIR_THEME_BUDVA', 'catalog/view/theme/budva/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
